@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "css/login.css" %} ">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <form method="post">
+        {% csrf_token %}
+        <h1>Please sign in</h1>
+        <input type="text" name="username" id="" placeholder="Username" required>
+        <input type="password" name="password" id="" placeholder="Password" required>
+        <input type="submit" value="Sign in">
+        <div style="text-align: center;">New user? <a href="signup">Create account</a></div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+</head>
+<body>
+    <div class="form-container">
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <!-- <div class="user">
+            <label for="usertype">Usertype</label>
+            <select name="uservalue" id="">
+                <option value="">Select</option>
+                <option value="doctor">Doctor</option>
+                <option value="client">Client</option>
+            </select>
+        </div> -->
+        <h1>Please sign up</h1>
+        <input type="text" name="uservalue" id="" placeholder="Usertype eg-client,doctor" required>
+        <input type="text" name="firstname" id="" placeholder="Firstname" required>
+        <input type="text" name="lastname" id="" placeholder="Lastname"required>
+        <input type="email" name="email" id="" placeholder="Email"required>
+        <input type="text" name="line1" id="" placeholder="Address line1"required>
+        <input type="text" name="city" id="" placeholder="City"required>
+        <input type="text" name="state" id="" placeholder="State"required>
+        <input type="number" name="pincode" id="" placeholder="Pincode"required>
+        <input type="text" name="username" id="" placeholder="Username"required>
+        <input type="password" name="pass" id="" placeholder="Password"required>
+        <input type="password" name="cpass" id="" placeholder="Confirm password"required>
+        <div class="profilep">
+            <label for="pphoto">Profile picture</label>
+            <input type="file" name="pphoto" id="" required>
+        </div>
+        <input type="submit" value="Signup">
+    </form>
+</div>
+</body>
+</html>

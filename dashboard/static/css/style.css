@@ -1,0 +1,58 @@
+body{
+    background-color: #EEF5FF;
+    text-transform: capitalize;
+}
+.main{
+    
+    width: 750px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: white;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 350px;
+    margin-right: 30px;
+}
+.right{
+    width: 350px;
+}
+.left div{
+    margin-bottom:40px ;
+    border-bottom: 1px solid black;
+    padding: 20px 20px 5px 10px;
+}
+.right div{
+    margin-bottom:40px ;
+    border-bottom: 1px solid black;
+    padding: 20px 20px 5px 10px;
+}
+h3{
+    text-align: center;
+}
+.image{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+button[type=submit]{
+    padding: 10px 20px;
+    border: none;
+    background-color: #86B6F6;
+    border-radius: 5px;
+    font-size: 14px;
+}
+form{
+    width: 90px;
+    margin: auto;
+}

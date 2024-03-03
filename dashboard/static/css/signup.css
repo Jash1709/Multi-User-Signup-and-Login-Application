@@ -1,0 +1,38 @@
+body{
+    background-color: #EEF5FF;
+}
+.form-container{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #b4d5ff91;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 2px;
+}
+form{
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin-bottom: 20px;
+    padding: 10px ;  
+}
+input[type=submit]{
+    background-color: #86B6F6;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.profilep input{
+   margin-bottom: 0;
+}
+.profilep{
+    border: 1px solid rgb(118, 118, 118);
+    margin-bottom: 20px;
+    padding: 0 10px;
+    background-color: white;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %} ">
+</head>
+<body>
+    <h3> welcome {{user.firstname}}</h3>
+    <div class="image">
+        <img src="{{user.pphoto.url}}" alt="profile picture">
+    </div>
+    
+    <div class="main">
+        <div class="container">
+        <div class="left">
+            <div>
+                Firstname: {{user.firstname}}
+            </div>
+            <div>
+                lastname: {{user.lastname}}
+            </div>
+            <div>
+                Email: {{user.email}}
+            </div>
+            <div>
+                Username:{{user.username}}
+            </div>
+            
+        </div>
+        <div class="right">
+            <div>
+                Address: {{user.line1}}
+            </div>
+            <div>
+                Pincode: {{user.pincode}}
+            </div>
+            <div>
+                City: {{user.city}}
+            </div>
+            <div>
+                State: {{user.state}}
+            </div>
+
+        </div>
+    </div>
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+</body>
+</html>
